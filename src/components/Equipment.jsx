@@ -75,15 +75,15 @@ export default function Equipment(props) {
 
     return (
         <>
-            <div className="container mx-[95px]">
-                <div className="flex justify-between gap-x-[38px] mt-[60px] mb-[60px]">
-                    <div className="w-1/2">
-                        <div className="font-bold text-[32px]">
+            <div className="container px-4 lg:px-0 lg:mx-auto">
+                <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-x-[38px] lg:mt-[60px] lg:mb-[60px] gap-y-8 lg:gap-y-0 mt-[30px] mb-[30px]">
+                    <div className="w-full lg:w-1/2">
+                        <div className="font-bold lg:text-[32px]">
                             {props.lg === "ru" && "Оборудование"}
                             {props.lg === "en" && "Equipment"}
                             {props.lg === "kz" && "Жабдық"}
                         </div>
-                        <div className="font-normal text-[20px] mt-[15px]">
+                        <div className="font-normal lg:text-[20px] lg:mt-[15px] mt-[10px]">
                             {props.lg === "ru" && "Инновационная современная технологическая линия полностью оснащена следующими узлами, изготовленными из нержавеющей стали AISI 304/316:"}
                             {props.lg === "en" && "The innovative modern technological line is fully equipped with the following units made of AISI 304/316 stainless steel:"}
                             {props.lg === "kz" && "Инновациялық заманауи технологиялық желі AISI 304/316 тот баспайтын болаттан жасалған келесі құрылғылармен толық жабдықталған:"}
@@ -97,7 +97,7 @@ export default function Equipment(props) {
                             ))}
                         </div>
                     </div>
-                    <div className="w-1/2 rounded-[16px]">
+                    <div className="w-full lg:w-1/2 rounded-[16px]">
                         <img src={EquipmentImage} alt="EquipmentImage" />
                     </div>
                 </div>

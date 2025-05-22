@@ -83,34 +83,28 @@ export default function SliderBlock(props) {
     return (
         <>
             <div className="container mx-auto px-4 py-8">
-                <h2 className="text-center text-3xl font-bold mb-2">
+                <h2 className="text-center text-xl lg:text-3xl font-bold mb-2">
                     {props.lg === "ru" && "Услуги и персонал"}
                     {props.lg === "en" && "Services and personnel"}
                     {props.lg === "kz" && "Қызметтер және персонал"}
                 </h2>
-                <h3 className="text-center text-xl mb-8">
+                <h3 className="text-center text-lg lg:text-xl mb-8">
                     {props.lg === "ru" && "Лучший из лучших"}
                     {props.lg === "en" && "Best of the best"}
                     {props.lg === "kz" && "Үздіктердің үздігі"}
                 </h3>
-                
-                <Swiper
-                    navigation={true}
-                    modules={[Navigation]}
-                    spaceBetween={30}
-                    slidesPerView={3.5}
-                    className="mySwiper"
-                >
+
+                <div className='flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 lg:gap-x-3'>
                     {currentSlides.map((slide, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="bg-gray-100 rounded-lg p-6 h-">
-                                <img src={slide.image} alt="SliderImage" />
-                                <h4 className="font-bold text-xl mb-4">{slide.title}</h4>
-                                <p className="text-gray-700">{slide.description}</p>
+                        <div key={index} className='basis-1/4'>
+                            <div className="bg-gray-100 rounded-lg p-6 h-full flex flex-col">
+                                <img src={slide.image} alt="SliderImage" className='h-[170px] lg:h-[250px] object-cover w-full'/>
+                                <h4 className="font-bold text-lg lg:text-xl mb-4 mt-3">{slide.title}</h4>
+                                <p className="text-gray-700 text-sm lg:text-base flex-grow">{slide.description}</p>
                             </div>
-                        </SwiperSlide>
+                        </div>
                     ))}
-                </Swiper>
+                </div>
             </div>
         </>
     )
