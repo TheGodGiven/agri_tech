@@ -19,11 +19,14 @@ function App() {
     };
     
     const scrollToSection = (sectionId) => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-      }
-  };
+        setModal(false);
+        setTimeout(() => {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 200);
+    };
 
     return (
         <>
@@ -88,7 +91,7 @@ function App() {
                     </div>
                 </>}
                 {!modal && <>
-                    <div className="md:hidden fixed top-4 right-4 z-10">
+                    <div className="lg:hidden fixed top-4 right-4 z-10">
                         <button 
                             onClick={() => setModal(true)}
                             className="bg-black rounded-full w-[50px] h-[50px] px-3 py-2 flex flex-col items-center justify-center gap-y-2"

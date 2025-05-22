@@ -16,7 +16,7 @@ export default function Header(props) {
     return (
         <>
             <div 
-                className="hidden md:block"
+                className="hidden lg:block"
                 style={{
                     backgroundImage: `url(${BGHeader})`,
                     backgroundSize: 'cover',
@@ -92,7 +92,7 @@ export default function Header(props) {
             </div>
 
             <div 
-                className="md:hidden"
+                className="lg:hidden"
                 style={{
                     backgroundImage: `url(${BGHeader})`,
                     backgroundSize: 'cover',
