@@ -27,7 +27,7 @@ export default function FactoryInfoCard(props) {
                 title: "Наше производство",
                 description: "Используя опыт ведущих мировых профессиональных консультантов и лучшее оборудование, нам удалось создать современное производство в одном из самых экологически чистых регионов Казахстана.",
                 link: "Подробнее...",
-                sectionId: "main",
+                sectionId: "complex",
                 icon: LampChargeIcon,
                 iconLight: LampChargeIconLight
             },
@@ -65,28 +65,36 @@ export default function FactoryInfoCard(props) {
                 title: "Our production",
                 description: "Using the experience of leading world professional consultants and the best equipment, we managed to create a modern production in one of the most environmentally friendly regions of Kazakhstan.",
                 link: "Learn more...",
-                icon: LampChargeIcon
+                sectionId: "complex",
+                icon: LampChargeIcon,
+                iconLight: LampChargeIconLight
             },
             {
                 id: 2,
                 title: "Our products",
                 description: "Using the experience of leading world professional consultants and the best equipment, we managed to create a modern production in one of the most environmentally friendly regions of Kazakhstan.",
                 link: "Learn more...",
-                icon: FlowerIcon
+                sectionId: "products",
+                icon: FlowerIcon,
+                iconLight: FlowerIconLight
             },
             {
                 id: 3,
                 title: "Certification",
                 description: "Using the experience of leading world professional consultants and the best equipment, we managed to create a modern production in one of the most environmentally friendly regions of Kazakhstan.",
                 link: "Learn more...",
-                icon: BillIcon
+                sectionId: "certification",
+                icon: BillIcon,
+                iconLight: BillIconLight
             },
             {
                 id: 4,
                 title: "Contact us",
                 description: "Using the experience of leading world professional consultants and the best equipment, we managed to create a modern production in one of the most environmentally friendly regions of Kazakhstan.",
                 link: "Learn more...",
-                icon: MessageIcon
+                sectionId: "contacts",
+                icon: MessageIcon,
+                iconLight: MessageIconLight
             },
         ],
         kz:[
@@ -95,28 +103,36 @@ export default function FactoryInfoCard(props) {
                 title: "Біздің өндіріс",
                 description: "Басқа әлемдік кәсіби кеңесшілердің тәжірибесін және ең жақсы жабдықтарды пайдалана отырып, біз Қазақстанның ең экологиялық таза аймақтарының бірінде заманауи өндіріс құруға қол жеткіздік.",
                 link: "Толығырақ...",
-                icon: LampChargeIcon
+                sectionId: "complex",
+                icon: LampChargeIcon,
+                iconLight: LampChargeIconLight
             },
             {
                 id: 2,
                 title: "Біздің өнімдер",
                 description: "Басқа әлемдік кәсіби кеңесшілердің тәжірибесін және ең жақсы жабдықтарды пайдалана отырып, біз Қазақстанның ең экологиялық таза аймақтарының бірінде заманауи өндіріс құруға қол жеткіздік.",
                 link: "Толығырақ...",
-                icon: FlowerIcon
+                sectionId: "products",
+                icon: FlowerIcon,
+                iconLight: FlowerIconLight
             },
             {
                 id: 3,
                 title: "Сертификация",
                 description: "Басқа әлемдік кәсіби кеңесшілердің тәжірибесін және ең жақсы жабдықтарды пайдалана отырып, біз Қазақстанның ең экологиялық таза аймақтарының бірінде заманауи өндіріс құруға қол жеткіздік.",
                 link: "Толығырақ...",
-                icon: BillIcon
+                sectionId: "certification",
+                icon: BillIcon,
+                iconLight: BillIconLight
             },
             {
                 id: 4,
                 title: "Бізбен хабарласыңыз",
                 description: "Басқа әлемдік кәсіби кеңесшілердің тәжірибесін және ең жақсы жабдықтарды пайдалана отырып, біз Қазақстанның ең экологиялық таза аймақтарының бірінде заманауи өндіріс құруға қол жеткіздік.",
                 link: "Толығырақ...",
-                icon: MessageIcon
+                sectionId: "contacts",
+                icon: MessageIcon,
+                iconLight: MessageIconLight
             },
         ]
     };

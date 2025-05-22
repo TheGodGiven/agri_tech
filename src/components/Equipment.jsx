@@ -76,7 +76,7 @@ export default function Equipment(props) {
     return (
         <>
             <div className="container px-4 lg:px-0 lg:mx-auto">
-                <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-x-[38px] lg:mt-[60px] lg:mb-[60px] gap-y-8 lg:gap-y-0 mt-[30px] mb-[30px]">
+                <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-x-[38px] lg:mt-[60px] lg:mb-[60px] gap-y-8 lg:gap-y-0 mt-[30px] mb-[30px] lg:px-8 xl:px-0">
                     <div className="w-full lg:w-1/2">
                         <div className="font-bold lg:text-[32px]">
                             {props.lg === "ru" && "Оборудование"}
@@ -98,7 +98,7 @@ export default function Equipment(props) {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2 rounded-[16px]">
-                        <img src={EquipmentImage} alt="EquipmentImage" />
+                        <img src={EquipmentImage} alt="EquipmentImage"/>
                     </div>
                 </div>
             </div>

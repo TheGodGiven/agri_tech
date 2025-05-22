@@ -4,7 +4,7 @@ import ProductsPoundImage from '../assets/ProductsPoundImage.png'
 export default function ProductBlock(props) {
     return (
         <>
-            <div className="container px-4 lg:px-0 lg:mx-auto mt-[60px] mb-[40px]">
+            <div className="container px-4 lg:px-8 lg:mx-auto mt-[60px] mb-[40px]">
                 <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 lg:gap-x-12">
                     <div className="w-full lg:w-[50%]">
                         <div className="text-[18px] lg:text-[24px] font-semibold bg-[#C7FF1D] text-[#484C52] rounded-[12px] p-2 max-w-max">

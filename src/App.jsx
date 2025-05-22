@@ -18,6 +18,13 @@ function App() {
         changeLang(value);
     };
     
+    const scrollToSection = (sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+      }
+  };
+
     return (
         <>
             <div className="relative">
@@ -35,22 +42,22 @@ function App() {
                             </div>
                             <div className="flex flex-col items-center justify-center mt-6 gap-y-3">
                                 
-                                <button className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
+                                <button onClick={()=>scrollToSection('')} className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
                                     {lang =="ru" && "Главная"}
                                     {lang =="en" && "Main"}
                                     {lang =="kz" && "Басты бет"}
                                 </button>
-                                <button className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
+                                <button onClick={()=>scrollToSection('complex')} className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
                                     {lang == "ru" && "Комплекс"}
                                     {lang == "en" && "Complex"}
                                     {lang == "kz" && "Кешен"}
                                 </button>
-                                <button className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
+                                <button onClick={()=>scrollToSection('products')} className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
                                     {lang == "ru" && "Продукция"}
                                     {lang == "en" && "Products"}
                                     {lang == "kz" && "Өнімдер"}
                                 </button>
-                                <button className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
+                                <button onClick={()=>scrollToSection('contacts')} className="px-[16px] py-[8px] bg-black rounded-full text-white font-medium w-full">
                                     {lang == "ru" && "Контакты"}
                                     {lang == "en" && "Contacts"}
                                     {lang == "kz" && "Байланыстар"}
@@ -99,10 +106,12 @@ function App() {
                 <div id="complex">
                     <FactoryOverviewCard lg={lang}/>
                 </div>
-                <div id="products">
+                <div id="equipment">
                     <Equipment lg={lang}/>
                     <SliderBlock lg={lang}/>
-                    <ProductBlock lg={lang}/>
+                </div>
+                <div id="products">
+                  <ProductBlock lg={lang}/>
                 </div>
                 <div id="certification">
                     <CertificationBlock lg={lang}/>

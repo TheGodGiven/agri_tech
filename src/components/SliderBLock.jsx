@@ -82,7 +82,7 @@ export default function SliderBlock(props) {
 
     return (
         <>
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto lg:px-8 px-4 py-8">
                 <h2 className="text-center text-xl lg:text-3xl font-bold mb-2">
                     {props.lg === "ru" && "Услуги и персонал"}
                     {props.lg === "en" && "Services and personnel"}

@@ -2,7 +2,7 @@ export default function FormBlock (props) {
     return (
         <>
             <div className="bg-[#F5F7FB]">
-                <div className="container px-4 lg:px-0 lg:mx-auto py-10 lg:py-[65px] mb-10 lg:mb-[60px]">
+                <div className="container px-4 lg:px-8 lg:mx-auto py-10 lg:py-[65px] mb-10 lg:mb-[60px]">
                     <div>
                         <div className="text-[32px] text-[#252D30] font-bold">
                             Свяжитесь с нами <br /> или отправьте нам запрос

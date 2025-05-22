@@ -4,7 +4,7 @@ import CardLocationImage from "../assets/CardLocationImage.png";
 export default function FactoryOverviewCard(props) {
     return (
         <>
-            <div className="mb-[60px]">
+            <div className="mb-[60px] px-8">
                 <div className="container flex flex-col lg:flex-row items-center gap-y-8 lg:gap-y-0 lg:gap-x-10 justify-between mt-[60px] px-4 lg:px-0 lg:mx-auto">
                     <div className="w-full lg:w-1/2">
                         <h3 className="px-[8px] py-[8px] bg-[#C7FF1D] rounded-[12px] text-[18px] lg:text-[24px] font-semibold">
